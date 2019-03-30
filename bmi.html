@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Casper Mataûschek">
+  <link rel="stylesheet" href="bmi.css">
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <div class="totaal">
+    <main>
+      <div id="vraag">
+        <h2>Bereken je BMI</h2>
+        <div id="input">
+
+            <div class="ge_slacht">
+              Geslacht
+            </div>
+            <div class="geslacht">
+              <select name="geslacht" required>
+                <option value="Man">Man</option>
+                <option value="Vrouw">Vrouw</option>
+              </select>
+            </div>
+          </div>
+      
+            <div class="leef_tijd">
+              Leeftijd
+            </div>
+            <input type="number" id="leeftijd" placeholder="Uw leeftijd">
+          </div>
+
+            <div class="ge_wicht">
+              Gewicht
+            </div>
+            <input type="number" id="gewicht" placeholder="Uw gewicht in kg">
+          </div>
+
+            <div class="leng_te">
+              Lengte
+            </div>
+            <input type="number" id="lengte" placeholder="Uw lengte in cm">
+          </div>
+        </div>
+        <div class="knop">
+          <button type="button" id="button">Bereken mijn BMI</button>
+        </div>
+        <div id="resultaat"></div>
+    </main>
+  </div>
+  <script src="ajax.js"></script>
+</body>
+
+</html>
